@@ -13,10 +13,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: configure
-      run: ./infix-postfix-solve
-    - name: make
-      run: make
+    - name: Установка компилятора
+      run: sudo apt-get install g++
+    - name: Компиляция проекта
+      run: g++ -o infix-postfix-solve
     - name: make check
       run: make check
     - name: make distcheck
