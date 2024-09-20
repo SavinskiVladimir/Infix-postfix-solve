@@ -16,6 +16,6 @@ jobs:
     - name: Установка компилятора
       run: sudo apt-get install g++
     - name: Компиляция проекта
-      run: g++ -o infix-postfix-solve infix-postfix-solve/infix-postfix-solve/infix-postfix-solve.cpp
+      run: g++ -o infix-postfix-solve src/infix-postfix-solve/infix-postfix-solve.cpp
     - name: Запуск программы
       run: ./infix-postfix-solve
